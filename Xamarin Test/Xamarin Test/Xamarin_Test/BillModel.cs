@@ -27,7 +27,7 @@ namespace Xamarin_Test
             }
         }
 
-        public int NumberOfPeopleSelectedIndex
+        public int SelectedNumberOfPeople
         {
             get
             {

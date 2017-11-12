@@ -10,7 +10,7 @@
 
         <Label Text ="Number of people"></Label>
         <Picker ItemsSource="{Binding NumberOfPeopleList}" 
-                SelectedItem="{Binding NumberOfPeopleSelectedIndex}" />
+                SelectedItem="{Binding SelectedNumberOfPeople}" />
 
 
         <Label Text ="Tip percent"></Label>
