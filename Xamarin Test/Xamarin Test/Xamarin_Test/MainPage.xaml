@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Xamarin_Test"
+             x:Class="Xamarin_Test.MainPage">
+
+    <StackLayout>
+        <Label Text="Enter your bill ammount:"></Label>
+
+        <Entry  Keyboard="Numeric" Text ="{Binding BillAmount, Mode=TwoWay }"/>
+
+        <Button Text="Next" Clicked="OnNextClick"></Button>
+    </StackLayout>
+
+</ContentPage>

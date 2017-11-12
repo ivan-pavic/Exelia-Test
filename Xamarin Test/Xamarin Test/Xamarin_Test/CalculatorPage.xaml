@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Xamarin_Test"
+             x:Class="Xamarin_Test.CalculatorPage">
+
+    <StackLayout>
+        <Label Text ="Bill Amount"></Label>
+        <Label Text ="{Binding BillAmount, Mode=OneWay}"></Label>
+
+        <Label Text ="Number of people"></Label>
+        <Picker ItemsSource="{Binding NumberOfPeopleList}" 
+                SelectedItem="{Binding NumberOfPeopleSelectedIndex}" />
+
+
+        <Label Text ="Tip percent"></Label>
+        <Slider Minimum="0" Maximum="100" Value="{Binding TipPercent}" />
+
+        <Label Text ="Total tip amount"></Label>
+        <Entry  Keyboard="Numeric" Text ="{Binding TipAmmount, Mode=TwoWay }"/>
+
+        <Label Text ="Total per person"></Label>
+        <Label Text ="{Binding TotalPerPerson}"></Label>
+
+        <Button Clicked="OnBackClick" Text="Back"></Button>
+    </StackLayout>
+</ContentPage>
